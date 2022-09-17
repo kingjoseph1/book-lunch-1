@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+/* Menu Section */
+}
+.navbar ul{
+    display:flex;
+    list-style: none;
+    margin: 70px ;
+    background-color:whitesmoke;
+    padding: 10px;
+    justify-content:center;
+
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+.navbar ul li a{
+    text-decoration: none ;
+     color: rgb(11,67,43);
+     padding: 8px 25px;
+     transition: all .5 ease ;
+
+
+}
+.navbar ul li a:hover{
+    background-color:blue;
+    color: black ;
+    box-shadow: 0 0 10px white;
+    border-radius: 20px;
+    
+    
+
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+
+#home::before{
+    content: "";
+    position:absolute;
+    top: 0 ;
+    right: 0 ;
+    background: url('image12.png') center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */ 
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+
+}
+
+.headings{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.193);
+    border-radius: 10px;
+    padding: 10px;
+    background: #64acff;
+    
+
+}
+
+
+/* button sections*/ 
+.btn{
+    padding: 10px 35px;
+    background-color: transparent ;
+    border: 1px solid orange;
+    color:white;
+    outline: none;
+    transition: .6s ease;
+    background-color:orange;
+    position:static;
+    border-radius: 10px;
+
+}
+.btn:hover{
+    cursor:pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px;
+    font-weight: bold;
+
+}
+
+.bts:hover{
+    cursor:pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px;
+    font-weight: bold;
+
+}
+
+
+.bts{
+    padding: 10px 35px;
+    background-color: transparent ;
+    border: 1px solid blue;
+    color:blue;
+    outline: none;
+    transition: .6s ease;
+
+
+}
+/* About Page */ 
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50%
+
+
+
+}
+
+
+#pic{
+    display:flex;
+
+}
+
+#pic img{
+    width: 875px;
+    height: 400px;
+   
+
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+
+}
+
+#intro h2{
+    font-size: 1rem;
+    margin-bottom: 20px;
+    align-content: space-around;
+
+}
+
+/* Books written by the Author Section */
+#books{
+    display: flex;
+    flex-direction: column;
+    background-color:transparent;
+    align-items: center;
+    padding: 20px;
+
+
+
+}
+/* gallery Section */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing:  border-box;
+
+}
+
+.gallery img{
+    width: 360px;
+    height: 240px;
+    margin: 10px;
+
+
+}
+/* contact Section */
+.contact-title h2 {
+    font-size: 35px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .contact-item {
+    text-align: center;
+    max-width: 150%;
+    background-image: url(contact-shape.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 50px 25px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+  }
+  
+  .contact-item h3 {
+    font-size: 20px;
+  }
+  
+  .contact-item h3 a {
+    color: #373e58;
+  }
+  
+  .contact-item .icon-contact {
+    width: 50px;
+    height: 50px;
+    background-color: #64acff;
+    line-height: 50px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  
+  .contact-item .icon-contact i {
+    line-height: 2;
+  }
+  
+  .contact-img {
+    margin-bottom: 30px;
+  }
+
+/* Services Section */
+#service{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+    border-radius: 10px;
+  }
+  
+  .container {
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+.row{
+    display:flex;
+
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    border :1px solid rgba(11,47,26,);
+
+
+}
+
+.content {
+    height: 70vh;
+    width:100;
+}
+
+/* footer Section */
+.newsletter {
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem;
+    background-color: blue;
+}
+
+input {
+    padding: 8px 10px;
+    background-color: white;
+    border: 2px solid black;
+    width: 10%;
+}
+
+
+
+.admin {
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 11px;
+    border: 1px solid black;
+    background-color: green;
+}
+
+.admin:hover {
+    background-color: greenyellow;
+}
+
+.row {
+  justify-content: center;
+}
